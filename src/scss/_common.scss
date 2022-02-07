@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixin";
+
+#wrapper {
+  background-image: url("../images/body-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 900px;
+  padding-top: 20px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(98.66deg, rgba(57, 60, 60, 0.8) 41.68%, rgba(57, 60, 60, 0) 89.84%);
+  }
+}

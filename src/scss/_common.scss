@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 900px;
-  padding-top: 20px;
+  padding: 185px 0 210px;
   position: relative;
 
   &:after {
@@ -25,3 +25,109 @@
     background: linear-gradient(98.66deg, rgba(57, 60, 60, 0.8) 41.68%, rgba(57, 60, 60, 0) 89.84%);
   }
 }
+
+.title-home {
+  font-family: $font-Comfortaa;
+  font-size: $font-size-base + 80;
+  line-height: $line-height-base + 86;
+  letter-spacing: 8px;
+  margin-bottom: 55px;
+
+  span {
+    position: relative;
+    top: 150px;
+    text-transform: uppercase;
+  }
+}
+
+.banner-content {
+  p {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 6;
+    max-width: 410px;
+    letter-spacing: 2px;
+    padding-left: 9px;
+  }
+}
+
+.holder-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.product-list {
+  margin-top: -130px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 75px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(1) {
+      .product-list-description {
+        max-width: 515px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.product-list-description {
+  max-width: 615px;
+
+  h3 {
+    font-size: $font-size-base + 20;
+    line-height: $line-height-base + 34;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base - 1;
+    margin-bottom: 40px;
+  }
+}
+
+.product-decor-1,
+.product-decor-2 {
+  position: absolute;
+}
+
+.product-decor-1 {
+  left: 60px;
+  bottom: -60px;
+  width: 240px;
+}
+.product-decor-2 {
+  right: 20px;
+  bottom: -50px;
+  width: 350px;
+}
+
+.smoke-decor-1 {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/smoke-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+

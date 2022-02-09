@@ -17,9 +17,6 @@
 }
 
 .menu-navigation-wrap {
-  min-width: 630px;
-  margin-bottom: 5px;
-
   @include breakpoint($mobile) {
     position: fixed;
     top: 0;
@@ -58,14 +55,19 @@
   }
 
   li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 
   .menu-navigation-info-user {
     display: flex;
     align-items: end;
     flex-direction: column;
-    margin-left: 70px;
+    margin-left: 30px;
+    margin-right: 0;
+
+    p {
+      margin-bottom: 23px;
+    }
   }
 
 }
@@ -138,6 +140,19 @@
 
 .logo {
   display: flex;
+}
+
+.item-blick {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 

@@ -73,6 +73,10 @@ button {
   cursor: pointer;
   border: none;
 
+  &:hover {
+    border: 5px solid $purple-heart;
+  }
+
   &:focus {
     outline: none;
   }
@@ -103,6 +107,11 @@ input {
 #wrapper {
   overflow: hidden;
   position: relative;
+}
+
+.img-area {
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 h1,

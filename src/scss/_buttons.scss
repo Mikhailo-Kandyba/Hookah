@@ -1,2 +1,17 @@
 @import "mixin";
 @import "variables";
+
+.button {
+  font-size: $font-size-base + 4;
+  line-height: $line-height-base + 3;
+  color: $white;
+  background: $transparent;
+  border: 5px solid $shocking-pink;
+  border-radius: 5px;
+  padding: 25px 77px;
+  font-weight: 700;
+}
+
+.btn-ml {
+  padding: 30px 40px;
+}

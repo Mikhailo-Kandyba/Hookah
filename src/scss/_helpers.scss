@@ -5,3 +5,66 @@
 .z-index-5 {
   z-index: 5;
 }
+
+.gradient {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #DFF10A, #DB10C7);
+}
+
+.decor-vector {
+  position: relative;
+  padding-left: 10px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 58px;
+    height: 19px;
+    background-image: url("../images/decor-vector.png");
+  }
+}
+
+.filter-background {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(ellipse at center, #ffffff 0%, #f7f7f7 50%, #ffffff 73%, #ffffff 100%);
+    filter: blur(55px);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
+  }
+}
+
+.shocking-pink-text {
+  color: $shocking-pink;
+}
+
+.img-area-background {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(62, 63, 65, 0.48);
+  }
+}
+
+.overflow-hidden-inherit {
+  overflow: inherit;
+}
+
+

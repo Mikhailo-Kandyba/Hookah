@@ -62,8 +62,6 @@ a {
 button {
   cursor: pointer;
   border: none; }
-  button:hover {
-    border: 5px solid #c21ace; }
   button:focus {
     outline: none; }
 
@@ -79,6 +77,11 @@ img {
 
 input {
   outline: none; }
+
+i {
+  color: #db10c7; }
+  i:hover {
+    color: #c21ace; }
 
 * {
   box-sizing: border-box; }
@@ -99,10 +102,14 @@ h5,
 h6 {
   font-weight: 400; }
 
-.container-xxl {
-  max-width: 1305px; }
+.container {
+  margin: 0 auto;
+  max-width: 1305px;
+  padding: 0 15px; }
 
-.button {
+.button,
+#btn-form,
+.link-btn {
   font-size: 20px;
   line-height: 25px;
   color: #fff;
@@ -111,9 +118,30 @@ h6 {
   border-radius: 5px;
   padding: 25px 77px;
   font-weight: 700; }
+  .button:hover,
+  #btn-form:hover,
+  .link-btn:hover {
+    border: 5px solid #c21ace; }
 
 .btn-ml {
   padding: 30px 40px; }
+
+.btn-sm {
+  padding: 25px 20px; }
+
+.btn-holder {
+  display: flex;
+  justify-content: center; }
+
+#btn-form {
+  width: inherit;
+  cursor: pointer;
+  letter-spacing: 3px;
+  padding: 23px 40px;
+  height: 80px; }
+
+.link-btn {
+  letter-spacing: 2px; }
 
 .header {
   padding: 17px 0;
@@ -327,8 +355,170 @@ h6 {
     background-repeat: no-repeat;
     background-position: center; }
 
+.product-wrap {
+  margin-bottom: 130px; }
+
+.tobacco-collection-wrap {
+  background-image: url("../images/backgroun-tobacco-collection.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 776px;
+  padding: 55px 0;
+  position: relative; }
+  .tobacco-collection-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(62, 63, 65, 0.48); }
+
+.title-block {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 30px; }
+  .title-block span {
+    font-weight: 700; }
+
+.tobacco-collection-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.tobacco-collection-body {
+  min-width: 230px; }
+  .tobacco-collection-body p {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 600;
+    padding-left: 0; }
+  .tobacco-collection-body .decor-vector:before {
+    left: -10px; }
+
+.collection-list a {
+  display: block;
+  padding: 5px; }
+
+.collection-list li {
+  margin-bottom: 5px; }
+
+.table-reservation {
+  padding: 70px 0;
+  position: relative; }
+  .table-reservation:after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/smoke-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    right: -170px;
+    top: -90px; }
+
+.tobacco-collection {
+  margin-bottom: 50px; }
+
+.tobacco-collection-content p {
+  margin-bottom: 32px; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer; }
+  select:focus {
+    outline: none; }
+
+.select-holder {
+  display: block; }
+
+.wpcf7-form-control {
+  background: #373b3b;
+  border: 1.8px solid rgba(255, 255, 255, 0.13);
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 27px;
+  color: #fff;
+  font-weight: 500;
+  padding: 20px 30px;
+  margin-bottom: 35px; }
+  .wpcf7-form-control::placeholder {
+    font-size: 17px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 3px; }
+
+.form-item-left {
+  padding-right: 75px; }
+
+.form-item-right {
+  padding-left: 75px; }
+
+.map-wrap {
+  padding: 0 !important; }
+
+.map-area {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .map-area {
+      margin-bottom: 6px; } }
+  .map-area iframe {
+    width: 100% !important; }
+    @media only screen and (max-width: 767px) {
+      .map-area iframe {
+        height: 128px; } }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative; }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end; }
+  .footer-contact p {
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1px; }
+  .footer-contact .link-btn {
+    margin-bottom: 10px; }
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .socials li {
+    margin-left: 35px; }
+  .socials a {
+    display: block;
+    padding: 5px; }
+  .socials i {
+    font-size: 40px; }
+
+.copyright {
+  font-family: "Julee", cursive;
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 350px; }
+
 .z-index-5 {
   z-index: 5; }
+
+.position-relative {
+  position: relative; }
 
 .gradient {
   color: transparent;
@@ -378,3 +568,20 @@ h6 {
 
 .overflow-hidden-inherit {
   overflow: inherit; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .row .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px; }
+
+.decor-coals {
+  position: absolute;
+  bottom: -65px;
+  right: -205px;
+  width: 455px; }

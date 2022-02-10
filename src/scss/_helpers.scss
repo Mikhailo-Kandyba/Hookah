@@ -6,6 +6,10 @@
   z-index: 5;
 }
 
+.position-relative {
+  position: relative;
+}
+
 .gradient {
   color: transparent;
   -webkit-background-clip: text;
@@ -66,5 +70,28 @@
 .overflow-hidden-inherit {
   overflow: inherit;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.decor-coals {
+  position: absolute;
+  bottom: -65px;
+  right: -205px;
+  width: 455px;
+}
+
+
 
 

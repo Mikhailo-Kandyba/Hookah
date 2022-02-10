@@ -1,5 +1,7 @@
 @import "mixin";
 
-.container-xxl {
+.container {
+  margin: 0 auto;
   max-width: 1305px;
+  padding: 0 15px;
 }

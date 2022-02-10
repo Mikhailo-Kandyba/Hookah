@@ -73,10 +73,6 @@ button {
   cursor: pointer;
   border: none;
 
-  &:hover {
-    border: 5px solid $purple-heart;
-  }
-
   &:focus {
     outline: none;
   }
@@ -98,6 +94,14 @@ img {
 
 input {
   outline: none;
+}
+
+i {
+  color: $shocking-pink;
+
+  &:hover {
+    color: $purple-heart;
+  }
 }
 
 * {

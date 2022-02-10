@@ -1,2 +1,55 @@
 @import "mixin";
 @import "variables";
+
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  p {
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+
+  .link-btn {
+    margin-bottom: 10px;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    margin-left: 35px;
+  }
+
+  a {
+    display: block;
+    padding: 5px;
+  }
+
+  i {
+    font-size: 40px;
+  }
+}
+
+.copyright {
+  font-family: $font-Julee;
+  font-size: $font-size-base + 6;
+  line-height: $line-height-base + 4;
+  max-width: 350px;
+}

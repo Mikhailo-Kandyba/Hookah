@@ -132,7 +132,7 @@
 }
 
 .product-wrap {
-  margin-bottom: 130px;
+  padding-bottom: 130px;
 }
 
 .tobacco-collection-wrap {
@@ -292,6 +292,32 @@ select {
     @include breakpoint($mobile) {
       height: 128px;
     }
+  }
+}
+
+.img-area {
+  img {
+    display: block;
+  }
+}
+
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $purple-heart;
+    opacity: 0.5;
+    z-index: -1;
   }
 }
 

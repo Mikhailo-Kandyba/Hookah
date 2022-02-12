@@ -107,7 +107,7 @@ h6 {
   max-width: 1305px;
   padding: 0 15px; }
 
-.button,
+.btn,
 #btn-form,
 .link-btn {
   font-size: 20px;
@@ -117,8 +117,9 @@ h6 {
   border: 5px solid #db10c7;
   border-radius: 5px;
   padding: 25px 77px;
-  font-weight: 700; }
-  .button:hover,
+  font-weight: 700;
+  box-shadow: 0px 0px 8px 0px #db10c7; }
+  .btn:hover,
   #btn-form:hover,
   .link-btn:hover {
     border: 5px solid #c21ace; }
@@ -356,7 +357,7 @@ h6 {
     background-position: center; }
 
 .product-wrap {
-  margin-bottom: 130px; }
+  padding-bottom: 130px; }
 
 .tobacco-collection-wrap {
   background-image: url("../images/backgroun-tobacco-collection.png");
@@ -478,6 +479,24 @@ select {
       .map-area iframe {
         height: 128px; } }
 
+.img-area img {
+  display: block; }
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .gallery-list:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #c21ace;
+    opacity: 0.5;
+    z-index: -1; }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -516,6 +535,9 @@ select {
 
 .z-index-5 {
   z-index: 5; }
+
+.z-index-4 {
+  z-index: 4; }
 
 .position-relative {
   position: relative; }

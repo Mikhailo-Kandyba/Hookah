@@ -10,6 +10,15 @@
   z-index: 4;
 }
 
+.z-index-10 {
+  z-index: 10;
+}
+.z-index-50 {
+  z-index: 50;
+}
+
+
+
 .position-relative {
   position: relative;
 }
@@ -32,6 +41,12 @@
     width: 58px;
     height: 19px;
     background-image: url("../images/decor-vector.png");
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/decor-vector-mobile.png");
+      width: 27px;
+      height: 12px;
+    }
   }
 }
 
@@ -94,6 +109,118 @@
   bottom: -65px;
   right: -205px;
   width: 455px;
+
+  @include breakpoint($tablet) {
+    bottom: -25px;
+    right: -15px;
+    width: 235px;
+  }
+
+  @include breakpoint($mobile) {
+    bottom: 25px;
+    right: -5px;
+    width: 125px;
+  }
+}
+
+.shootouts-1 {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -105px;
+    transform: translate(0, -50%);
+    width: 22px;
+    height: 220px;
+    background-image: url("../images/shootouts-1.png");
+    background-repeat: no-repeat;
+
+    @include breakpoint($desktop) {
+      right: -55px;
+    }
+
+    @include breakpoint($tablet) {
+      background-image: url("../images/shootouts-tab-2.png");
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 94px;
+      right: -20px;
+    }
+  }
+}
+
+.shootouts-2 {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -105px;
+    transform: translate(0, -50%);
+    width: 22px;
+    height: 220px;
+    background-image: url("../images/shootouts-2.png");
+    background-repeat: no-repeat;
+
+
+    @include breakpoint($desktop) {
+      right: -55px;
+    }
+
+    @include breakpoint($tablet) {
+      background-image: url("../images/shootouts-tab-3.png");
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 94px;
+      right: -20px;
+    }
+  }
+}
+
+.shootouts-3 {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -105px;
+    transform: translate(0, -50%);
+    width: 22px;
+    height: 220px;
+    background-image: url("../images/shootouts-3.png");
+    background-repeat: no-repeat;
+
+    @include breakpoint($desktop) {
+      right: -55px;
+    }
+
+    @include breakpoint($tablet) {
+      background-image: url("../images/shootouts-tab-4.png");
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 94px;
+      right: -20px;
+    }
+  }
+}
+
+.background {
+  @include breakpoint($mobile) {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(143, 138, 138, 0.67);
+      z-index: 10;
+    }
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 

@@ -4,7 +4,7 @@ $(".btn-menu").on('click', function(e) {
     $(this).toggleClass("active");
     $(".menu-navigation-wrap").toggleClass('show-menu');
     $("body").toggleClass('overflow-hidden');
-    // $("body").toggleClass('background');
+    $("body").toggleClass('background');
 });
 
 

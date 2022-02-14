@@ -8,12 +8,20 @@
   top: 0;
   left: 0;
   right: 0;
+
+  @include breakpoint($mobile) {
+    padding: 12px 0;
+  }
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include breakpoint($mobile) {
+    margin: 0 24px;
+  }
 }
 
 .menu-navigation-wrap {
@@ -22,7 +30,7 @@
     top: 0;
     right: 200%;
     transition: all .25s ease;
-    min-width: 230px;
+    min-width: 212px;
   }
 }
 
@@ -31,6 +39,10 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    justify-content: end;
+  }
 
   @include breakpoint($mobile) {
     display: block;
@@ -52,10 +64,23 @@
   a {
     display: block;
     padding: 5px;
+
+    @include breakpoint($mobile) {
+      padding: 6px;
+    }
   }
 
   li {
     margin: 0 10px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 7;
+    }
+
+    @include breakpoint($mobile) {
+      margin: 0;
+    }
   }
 
   .menu-navigation-info-user {
@@ -65,11 +90,27 @@
     margin-left: 30px;
     margin-right: 0;
 
+    @include breakpoint($desktop) {
+      margin-right: 15px;
+    }
+
+    @include breakpoint($mobile) {
+      align-items: flex-start;
+      margin: 10px 0 0 0;
+    }
+
     p {
       margin-bottom: 23px;
+
+      @include breakpoint($mobile) {
+        font-weight: 500;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 8;
+        margin-bottom: 10px;
+        padding-left: 6px;
+      }
     }
   }
-
 }
 
 .show-menu {
@@ -81,10 +122,10 @@
 .btn-menu {
   display: none;
   position: absolute;
-  top: 30px;
+  bottom: 0;
   right: 0;
-  height: 22px;
-  width: 28px;
+  height: 12px;
+  width: 20px;
   cursor: pointer;
   transition: all .25s ease;
   z-index: 103;
@@ -97,7 +138,7 @@
   span {
     background: $white;
     border: none;
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -132,7 +173,7 @@
     }
 
     .bottom {
-      bottom: 4px;
+      bottom: -5px;
       transform: translateY(-8px) translateX(0) rotate(-45deg);
     }
   }
@@ -140,6 +181,17 @@
 
 .logo {
   display: flex;
+  padding: 0 !important;
+
+  img {
+    @include breakpoint($tablet) {
+      width: 100px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 60px;
+    }
+  }
 }
 
 .item-blick {
@@ -153,6 +205,11 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.logo-item {
+  margin: 0 !important;
+  order: -1 !important;
 }
 
 

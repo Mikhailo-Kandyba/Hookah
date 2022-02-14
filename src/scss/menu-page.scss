@@ -1,0 +1,253 @@
+@import "variables";
+@import "mixin";
+
+.banner-menu-page {
+  justify-content: flex-start;
+  background-image: url("../images/banner-menu-page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 875px;
+
+  @include breakpoint($tablet) {
+    min-height: 355px;
+  }
+
+  @include breakpoint($mobile) {
+    min-height: 160px;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+//.banner-menu-content {
+//  &:after {
+//    content: '';
+//    position: absolute;
+//    bottom: -100px;
+//    right: 0;
+//    width: 22px;
+//    height: 220px;
+//    background-image: url("../images/shootouts-1.png");
+//    background-repeat: no-repeat;
+//  }
+//}
+
+.menu-list-wrap {
+  position: relative;
+  padding-top: 110px;
+  margin-top: -100px;
+  padding-bottom: 5px;
+  margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    margin-top: -80px;
+    padding-top: 45px;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint($mobile) {
+    padding-top: 16px;
+    padding-bottom: 1px;
+    margin-bottom: 31px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/smoke-1.png");
+    background-repeat: no-repeat;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 8;
+
+    @include breakpoint($mobile) {
+      backdrop-filter: blur(20px);
+    }
+  }
+}
+
+.menu-list-block {
+
+  @include breakpoint($tablet) {
+    padding: 0 90px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 20px;
+  }
+}
+
+.menu-list {
+  h4 {
+    font-weight: 600;
+    font-size: $font-size-base + 14;
+    line-height: $line-height-base + 15;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base - 2;
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 4;
+      margin-bottom: 23px;
+    }
+  }
+
+  .decor-vector {
+    padding-left: 0;
+
+    &:before {
+      @include breakpoint($tablet) {
+        left: -13px;
+      }
+
+      @include breakpoint($mobile) {
+        left: -5px;
+      }
+    }
+  }
+}
+
+.menu-list-item {
+  padding-top: 22px;
+  margin-bottom: 50px;
+
+  @include breakpoint($tablet) {
+    padding-top: 2px;
+    margin-bottom: 32px;
+  }
+
+  @include breakpoint($mobile) {
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 16px;
+    }
+
+    @include breakpoint($mobile) {
+      align-items: end;
+      margin-bottom: 7px;
+    }
+
+    span {
+      border-bottom: 1px dashed $white;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 3;
+    letter-spacing: 1px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 7;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 9;
+    }
+  }
+
+  .name {
+    margin-right: 10px;
+    min-width: fit-content;
+
+    span {
+      font-family: $base-font-family;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 1;
+      font-weight: 400;
+      border: none;
+
+      @include breakpoint($tablet) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base - 7;
+        display: block;
+      }
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 9;
+        max-width: 160px;
+      }
+    }
+  }
+
+  .price {
+    margin-left: 10px;
+    min-width: 100px;
+    text-align: right;
+
+    @include breakpoint($tablet) {
+      text-align: left;
+    }
+
+    @include breakpoint($mobile) {
+      min-width: 50px;
+    }
+  }
+}
+
+.title-menu {
+  font-family: $font-Comfortaa;
+  font-weight: 700;
+  text-align: center;
+  font-size: $font-size-base + 20;
+  line-height: $line-height-base + 19;
+  color: $bitter-lemon;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+  padding-top: 20px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+    line-height: $line-height-base - 4;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+
+  @include breakpoint($mobile) {
+    padding-top: 12px;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 6;
+  }
+}
+
+
+
+
+

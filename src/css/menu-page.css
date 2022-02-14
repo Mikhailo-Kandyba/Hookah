@@ -1,0 +1,180 @@
+.banner-menu-page {
+  justify-content: flex-start;
+  background-image: url("../images/banner-menu-page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 875px; }
+  @media only screen and (max-width: 1023px) {
+    .banner-menu-page {
+      min-height: 355px; } }
+  @media only screen and (max-width: 767px) {
+    .banner-menu-page {
+      min-height: 160px; } }
+  .banner-menu-page:after {
+    display: none; }
+
+.menu-list-wrap {
+  position: relative;
+  padding-top: 110px;
+  margin-top: -100px;
+  padding-bottom: 5px;
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 1023px) {
+    .menu-list-wrap {
+      margin-top: -80px;
+      padding-top: 45px;
+      padding-bottom: 13px;
+      margin-bottom: 50px; } }
+  @media only screen and (max-width: 767px) {
+    .menu-list-wrap {
+      padding-top: 16px;
+      padding-bottom: 1px;
+      margin-bottom: 31px; } }
+  .menu-list-wrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/smoke-1.png");
+    background-repeat: no-repeat; }
+  .menu-list-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 8; }
+    @media only screen and (max-width: 767px) {
+      .menu-list-wrap:after {
+        backdrop-filter: blur(20px); } }
+
+@media only screen and (max-width: 1023px) {
+  .menu-list-block {
+    padding: 0 90px; } }
+
+@media only screen and (max-width: 767px) {
+  .menu-list-block {
+    padding: 0 20px; } }
+
+.menu-list h4 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 1023px) {
+    .menu-list h4 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .menu-list h4 {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 23px; } }
+
+.menu-list .decor-vector {
+  padding-left: 0; }
+  @media only screen and (max-width: 1023px) {
+    .menu-list .decor-vector:before {
+      left: -13px; } }
+  @media only screen and (max-width: 767px) {
+    .menu-list .decor-vector:before {
+      left: -5px; } }
+
+.menu-list-item {
+  padding-top: 22px;
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 1023px) {
+    .menu-list-item {
+      padding-top: 2px;
+      margin-bottom: 32px; } }
+  @media only screen and (max-width: 767px) {
+    .menu-list-item {
+      padding-top: 0;
+      margin-bottom: 16px; } }
+  .menu-list-item li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 1023px) {
+      .menu-list-item li {
+        margin-bottom: 16px; } }
+    @media only screen and (max-width: 767px) {
+      .menu-list-item li {
+        align-items: end;
+        margin-bottom: 7px; } }
+    .menu-list-item li span {
+      border-bottom: 1px dashed #fff;
+      width: 100%; }
+  .menu-list-item p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 1023px) {
+      .menu-list-item p {
+        font-size: 12px;
+        line-height: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .menu-list-item p {
+        font-size: 10px;
+        line-height: 13px; } }
+  .menu-list-item .name {
+    margin-right: 10px;
+    min-width: fit-content; }
+    .menu-list-item .name span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 400;
+      border: none; }
+      @media only screen and (max-width: 1023px) {
+        .menu-list-item .name span {
+          font-size: 11px;
+          line-height: 15px;
+          display: block; } }
+      @media only screen and (max-width: 767px) {
+        .menu-list-item .name span {
+          font-size: 10px;
+          line-height: 13px;
+          max-width: 160px; } }
+  .menu-list-item .price {
+    margin-left: 10px;
+    min-width: 100px;
+    text-align: right; }
+    @media only screen and (max-width: 1023px) {
+      .menu-list-item .price {
+        text-align: left; } }
+    @media only screen and (max-width: 767px) {
+      .menu-list-item .price {
+        min-width: 50px; } }
+
+.title-menu {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 41px;
+  color: #dff10a;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+  padding-top: 20px; }
+  @media only screen and (max-width: 1023px) {
+    .title-menu {
+      font-size: 16px;
+      line-height: 18px;
+      padding-top: 0;
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .title-menu {
+      padding-top: 12px;
+      font-size: 14px;
+      line-height: 16px; } }

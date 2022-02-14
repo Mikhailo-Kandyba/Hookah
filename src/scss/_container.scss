@@ -4,4 +4,16 @@
   margin: 0 auto;
   max-width: 1305px;
   padding: 0 15px;
+  width: 100%;
+}
+
+.container-sm {
+  margin: 0 auto;
+  max-width: 1065px;
+  padding: 0 15px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    max-width: 885px;
+  }
 }

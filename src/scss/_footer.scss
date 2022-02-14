@@ -1,7 +1,21 @@
 @import "mixin";
 @import "variables";
 
-
+//.footer {
+//  position: relative;
+//
+//  &:after {
+//    content: '';
+//    position: absolute;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//    background-image: url("../images/smoke-3.png");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//  }
+//}
 
 
 .footer-content {
@@ -9,6 +23,21 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+
+  @include breakpoint($tablet) {
+    padding: 0 80px;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .logo {
+    @include breakpoint($mobile) {
+      margin-bottom: 8px;
+    }
+  }
 }
 
 .footer-contact {
@@ -16,14 +45,33 @@
   flex-direction: column;
   align-items: end;
 
+  @include breakpoint($mobile) {
+    align-items: flex-start;
+  }
+
   p {
     font-weight: 500;
     margin-bottom: 15px;
     letter-spacing: 1px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base + 5;
+      margin-bottom: 4px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 8;
+    }
   }
 
   .link-btn {
     margin-bottom: 10px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 7px;
+    }
   }
 }
 
@@ -33,17 +81,57 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 7px;
+  }
+
   li {
     margin-left: 35px;
+
+    @include breakpoint($tablet) {
+      margin-left: 11px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-left: 0;
+      margin-right: 7px;
+    }
   }
 
   a {
     display: block;
     padding: 5px;
+
+    @include breakpoint($mobile) {
+      padding: 0;
+    }
+
+    img {
+      width: 40px;
+
+      &:hover {
+        filter: saturate(60%)
+      }
+      @include breakpoint($tablet) {
+        width: 30px;
+      }
+
+      @include breakpoint($mobile) {
+        width: 23px;
+      }
+    }
   }
 
   i {
-    font-size: 40px;
+    font-size: $font-size-base + 24;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 14;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 11;
+    }
   }
 }
 
@@ -52,4 +140,21 @@
   font-size: $font-size-base + 6;
   line-height: $line-height-base + 4;
   max-width: 350px;
+  margin-bottom: 20px;
+  margin-top: -60px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 7;
+    margin-top: -40px;
+    max-width: 270px;
+    padding-left: 80px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-top: 0;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 10;
+    padding-left: 20px;
+  }
 }

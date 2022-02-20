@@ -4,20 +4,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 875px; }
+  min-height: 875px;
+  padding: 200px 0 160px;
+  align-items: flex-start; }
   @media only screen and (max-width: 1023px) {
     .banner-menu-page {
-      min-height: 355px; } }
+      min-height: 355px;
+      padding: 110px 0 80px; } }
   @media only screen and (max-width: 767px) {
     .banner-menu-page {
       min-height: 160px; } }
   .banner-menu-page:after {
     display: none; }
 
+.banner-menu-content {
+  padding: 0 70px; }
+
 .menu-list-wrap {
   position: relative;
   padding-top: 110px;
-  margin-top: -100px;
+  margin-top: -155px;
   padding-bottom: 5px;
   margin-bottom: 70px; }
   @media only screen and (max-width: 1023px) {

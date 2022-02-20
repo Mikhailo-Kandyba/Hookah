@@ -52,6 +52,17 @@
 
 .stock-list {
   li {
+    align-items: flex-start;
+    margin-bottom: 70px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
+
     &:nth-child(even) {
       .product-list-description {
         padding-left: 0;

@@ -9,8 +9,7 @@
 
 .banner {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background-image: url("../images/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,10 +41,57 @@
 }
 
 .banner-content {
-  padding: 0 78px;
+  @include breakpoint($tablet) {
+    padding: 0 80px;
+  }
 
   @include breakpoint($mobile) {
-    padding: 0 25px;
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 6;
+    max-width: 410px;
+    letter-spacing: 2px;
+    padding-left: 9px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 5;
+      max-width: 290px;
+      margin-bottom: 13px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 8;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+  }
+
+  .btn {
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 6;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 3;
+      letter-spacing: 1px;
+    }
+  }
+
+  .btn-ml {
+    @include breakpoint($tablet) {
+      padding: 10px 20px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 6px 20px;
+    }
   }
 }
 
@@ -55,6 +101,7 @@
   line-height: $line-height-base + 86;
   letter-spacing: 8px;
   margin-bottom: 55px;
+  font-weight: 700;
 
   @include breakpoint($tablet) {
     font-size: $font-size-base + 40;
@@ -105,37 +152,6 @@
   }
 }
 
-.banner-content {
-  p {
-    font-size: $font-size-base + 4;
-    line-height: $line-height-base + 6;
-    max-width: 410px;
-    letter-spacing: 2px;
-    padding-left: 9px;
-
-    @include breakpoint($tablet) {
-      font-size: $font-size-base - 3;
-      line-height: $line-height-base - 5;
-      max-width: 290px;
-      margin-bottom: 13px;
-    }
-
-    @include breakpoint($mobile) {
-      font-size: $font-size-base - 6;
-      line-height: $line-height-base - 8;
-      font-weight: 500;
-      margin-bottom: 3px;
-    }
-  }
-
-  .btn {
-    @include breakpoint($tablet) {
-      font-size: $font-size-base - 6;
-      line-height: $line-height-base - 10;
-    }
-  }
-}
-
 .holder-btn {
   display: flex;
   justify-content: space-between;
@@ -147,19 +163,16 @@
 }
 
 .product-wrap-content {
-  padding: 0 60px;
+  @include breakpoint($tablet) {
+    padding: 0 80px;
+  }
 
   @include breakpoint($mobile) {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
 .product-list {
-
-  //.img-area {
-  //  margin: 0 -15px;
-  //}
-
   li {
     display: flex;
     justify-content: space-between;
@@ -167,8 +180,7 @@
     margin-bottom: 75px;
 
     @include breakpoint($tablet) {
-      margin-bottom: 48px;
-      align-items: center;
+      margin-bottom: 40px;
     }
 
     @include breakpoint($mobile) {
@@ -184,20 +196,24 @@
       }
 
       .product-list-description {
-        padding-left: 70px;
-
         @include breakpoint($desktop) {
           padding-left: 40px;
+        }
+
+        @include breakpoint($mobile) {
+          padding-left: 0;
         }
       }
     }
 
     &:nth-child(odd) {
       .product-list-description {
-        padding-right: 70px;
-
         @include breakpoint($desktop) {
           padding-right: 40px;
+        }
+
+        @include breakpoint($mobile) {
+          padding-right: 0;
         }
       }
     }
@@ -211,7 +227,7 @@
         }
 
         @include breakpoint($tablet) {
-          max-width: 330px;
+          max-width: 310px;
         }
 
         @include breakpoint($mobile) {
@@ -235,7 +251,7 @@
   }
 
   @include breakpoint($tablet) {
-    max-width: 330px;
+    max-width: 310px;
   }
 
   @include breakpoint($mobile) {
@@ -338,6 +354,7 @@
     background-image: url("../images/smoke-1.png");
     background-repeat: no-repeat;
     background-position: center;
+    filter: blur(20px);
   }
 }
 
@@ -485,7 +502,7 @@
 }
 
 .table-reservation {
-  padding: 70px 0;
+  padding: 70px 0 40px;
   position: relative;
 
   @include breakpoint($tablet) {
@@ -493,7 +510,7 @@
   }
 
   @include breakpoint($mobile) {
-    padding: 30px 0 35px;
+    padding: 30px 23px 35px;
   }
 
   &:after {
@@ -518,6 +535,9 @@
 }
 
 .tobacco-collection-content {
+  @include breakpoint($mobile) {
+    padding: 10px;
+  }
   p {
     margin-bottom: 40px;
 
@@ -587,7 +607,7 @@ select {
     color: rgba(255, 255, 255, 0.7);
     height: 32px;
     margin-bottom: 10px;
-    padding: 3px 21px;
+    padding: 3px 7px;
   }
 
   &::placeholder {
@@ -606,12 +626,17 @@ select {
       font-size: $font-size-base - 6;
       line-height: $line-height-base - 12;
       color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0;
     }
   }
 }
 
 .form-item-left {
-  padding-right: 75px;
+  padding-right: 60px;
+
+  @include breakpoint($desktop) {
+    padding-right: 20px;
+  }
 
   @include breakpoint($tablet) {
     padding-right: 0;
@@ -619,7 +644,11 @@ select {
 }
 
 .form-item-right {
-  padding-left: 75px;
+  padding-left: 60px;
+
+  @include breakpoint($desktop) {
+    padding-left: 20px;
+  }
 
   @include breakpoint($tablet) {
     padding-left: 0;
@@ -671,8 +700,39 @@ select {
   }
 
   @include breakpoint($mobile) {
-    padding: 0;
-    margin-bottom: 65px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+  }
+
+  .link-gallery {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: block;
+    }
+  }
+}
+
+.title-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 12px;
+  }
+
+  .title-block {
+    margin-bottom: 0;
+  }
+
+  .link-gallery {
+    display: block;
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 }
 

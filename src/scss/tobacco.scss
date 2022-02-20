@@ -1,17 +1,6 @@
 @import "mixin";
 @import "variables";
 
-.tobacco-wrap {
-  padding-top: 200px;
-
-  @include breakpoint($tablet) {
-    padding-top: 140px;
-  }
-
-  @include breakpoint($mobile) {
-    padding-top: 70px;
-  }
-}
 
 .tobacco-content {
   @include breakpoint($desktop) {

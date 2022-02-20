@@ -1,12 +1,3 @@
-.tobacco-wrap {
-  padding-top: 200px; }
-  @media only screen and (max-width: 1023px) {
-    .tobacco-wrap {
-      padding-top: 140px; } }
-  @media only screen and (max-width: 767px) {
-    .tobacco-wrap {
-      padding-top: 70px; } }
-
 @media only screen and (max-width: 1295px) {
   .tobacco-content {
     padding: 0 40px; } }

@@ -488,9 +488,6 @@ h6 {
     .product-wrap-content {
       padding: 0; } }
 
-.product-list .img-area {
-  margin: 0 -15px; }
-
 .product-list li {
   display: flex;
   justify-content: space-between;
@@ -509,6 +506,16 @@ h6 {
     @media only screen and (max-width: 767px) {
       .product-list li:nth-child(even) {
         flex-direction: column; } }
+    .product-list li:nth-child(even) .product-list-description {
+      padding-left: 70px; }
+      @media only screen and (max-width: 1295px) {
+        .product-list li:nth-child(even) .product-list-description {
+          padding-left: 40px; } }
+  .product-list li:nth-child(odd) .product-list-description {
+    padding-right: 70px; }
+    @media only screen and (max-width: 1295px) {
+      .product-list li:nth-child(odd) .product-list-description {
+        padding-right: 40px; } }
   .product-list li:nth-child(1) .product-list-description {
     max-width: 515px; }
     @media only screen and (max-width: 1295px) {
@@ -516,7 +523,7 @@ h6 {
         max-width: 490px; } }
     @media only screen and (max-width: 1023px) {
       .product-list li:nth-child(1) .product-list-description {
-        max-width: 350px; } }
+        max-width: 330px; } }
     @media only screen and (max-width: 767px) {
       .product-list li:nth-child(1) .product-list-description {
         max-width: 100%;
@@ -528,11 +535,10 @@ h6 {
   max-width: 615px; }
   @media only screen and (max-width: 1295px) {
     .product-list-description {
-      max-width: 440px;
-      padding: 0 17px; } }
+      max-width: 440px; } }
   @media only screen and (max-width: 1023px) {
     .product-list-description {
-      max-width: 305px; } }
+      max-width: 330px; } }
   @media only screen and (max-width: 767px) {
     .product-list-description {
       max-width: 100%; } }
@@ -542,12 +548,14 @@ h6 {
     margin-bottom: 35px;
     letter-spacing: 3px;
     font-weight: 600; }
+    @media only screen and (max-width: 1295px) {
+      .product-list-description h3 {
+        letter-spacing: 0; } }
     @media only screen and (max-width: 1023px) {
       .product-list-description h3 {
         font-size: 16px;
         line-height: 25px;
         letter-spacing: 1px;
-        padding-right: 45px;
         margin-bottom: 12px; } }
     @media only screen and (max-width: 767px) {
       .product-list-description h3 {
@@ -715,8 +723,9 @@ h6 {
 .collection-list li {
   margin-bottom: 5px; }
 
-.form-row {
-  flex-direction: column; }
+@media only screen and (max-width: 767px) {
+  .form-row {
+    flex-direction: column; } }
 
 .table-reservation {
   padding: 70px 0;
@@ -1080,15 +1089,6 @@ select {
       font-size: 14px;
       line-height: 16px; } }
 
-.tobacco-wrap {
-  padding-top: 200px; }
-  @media only screen and (max-width: 1023px) {
-    .tobacco-wrap {
-      padding-top: 140px; } }
-  @media only screen and (max-width: 767px) {
-    .tobacco-wrap {
-      padding-top: 70px; } }
-
 @media only screen and (max-width: 1295px) {
   .tobacco-content {
     padding: 0 40px; } }
@@ -1210,6 +1210,95 @@ select {
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 8px; } }
+
+.stock-wrap-content {
+  padding: 0; }
+
+@media only screen and (max-width: 1295px) {
+  .stock-content {
+    padding: 0 40px; } }
+
+@media only screen and (max-width: 1023px) {
+  .stock-content {
+    padding: 0 78px; } }
+
+@media only screen and (max-width: 767px) {
+  .stock-content {
+    padding: 0 23px; } }
+
+.stock-content .title-page {
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 1023px) {
+    .stock-content .title-page {
+      margin-bottom: 33px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-content .title-page {
+      letter-spacing: 1px;
+      margin-bottom: 26px; } }
+
+.stock-content p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 22px; }
+  @media only screen and (max-width: 1023px) {
+    .stock-content p {
+      font-size: 12px;
+      line-height: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-content p {
+      font-size: 10px;
+      line-height: 22px -10;
+      margin-bottom: 14px; } }
+
+.stock-list li:nth-child(even) .product-list-description {
+  padding-left: 0; }
+  @media only screen and (max-width: 1295px) {
+    .stock-list li:nth-child(even) .product-list-description {
+      padding-left: 10px;
+      margin-left: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-list li:nth-child(even) .product-list-description {
+      padding-left: 0;
+      margin-left: 0; } }
+
+.stock-list li:nth-child(odd) .product-list-description {
+  padding-right: 0; }
+  @media only screen and (max-width: 1295px) {
+    .stock-list li:nth-child(odd) .product-list-description {
+      padding-right: 10px;
+      margin-right: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-list li:nth-child(odd) .product-list-description {
+      padding-right: 0;
+      margin-right: 0; } }
+
+.stock-list li:nth-child(1) .product-list-description {
+  max-width: 615px; }
+  @media only screen and (max-width: 1295px) {
+    .stock-list li:nth-child(1) .product-list-description {
+      max-width: 450px; } }
+  @media only screen and (max-width: 1023px) {
+    .stock-list li:nth-child(1) .product-list-description {
+      max-width: 305px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-list li:nth-child(1) .product-list-description {
+      max-width: 100%; } }
+  .stock-list li:nth-child(1) .product-list-description p {
+    margin-bottom: 22px; }
+
+.stock-list .product-list-description {
+  max-width: 615px; }
+  @media only screen and (max-width: 1295px) {
+    .stock-list .product-list-description {
+      max-width: 450px; } }
+  @media only screen and (max-width: 1023px) {
+    .stock-list .product-list-description {
+      max-width: 290px; } }
+  @media only screen and (max-width: 767px) {
+    .stock-list .product-list-description {
+      max-width: 100%; } }
+  .stock-list .product-list-description h3 {
+    letter-spacing: 0; }
 
 .footer-content {
   display: flex;
@@ -1490,3 +1579,12 @@ select {
 
 .overflow-hidden {
   overflow: hidden; }
+
+.padding-top-200 {
+  padding-top: 200px; }
+  @media only screen and (max-width: 1023px) {
+    .padding-top-200 {
+      padding-top: 140px; } }
+  @media only screen and (max-width: 767px) {
+    .padding-top-200 {
+      padding-top: 70px; } }

@@ -1408,6 +1408,41 @@ select {
   .title-block-booking {
     letter-spacing: 1px; } }
 
+.gallery-content {
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 1295px) {
+    .gallery-content {
+      padding: 0 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .gallery-content {
+      padding: 0 78px; } }
+  @media only screen and (max-width: 767px) {
+    .gallery-content {
+      padding: 0 23px;
+      margin-bottom: 50px; } }
+  .gallery-content .title-page {
+    margin-bottom: 40px; }
+    @media only screen and (max-width: 1023px) {
+      .gallery-content .title-page {
+        margin-bottom: 33px; } }
+    @media only screen and (max-width: 767px) {
+      .gallery-content .title-page {
+        letter-spacing: 1px;
+        margin-bottom: 26px; } }
+  .gallery-content p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 22px; }
+    @media only screen and (max-width: 1023px) {
+      .gallery-content p {
+        font-size: 12px;
+        line-height: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .gallery-content p {
+        font-size: 10px;
+        line-height: 22px -10;
+        margin-bottom: 14px; } }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -1750,3 +1785,9 @@ select {
   @media only screen and (max-width: 767px) {
     .margin-bottom-35 {
       margin-bottom: 13px; } }
+
+.padding-top-20 {
+  padding-top: 20px; }
+  @media only screen and (max-width: 1023px) {
+    .padding-top-20 {
+      padding-top: 10px; } }

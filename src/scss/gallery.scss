@@ -1,0 +1,49 @@
+@import "mixin";
+@import "variables";
+
+.gallery-content {
+  margin-bottom: 100px;
+
+  @include breakpoint($desktop) {
+    padding: 0 40px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0 78px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 23px;
+    margin-bottom: 50px;
+  }
+
+  .title-page {
+    margin-bottom: 40px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 33px;
+    }
+
+    @include breakpoint($mobile) {
+      letter-spacing: 1px;
+      margin-bottom: 26px;
+    }
+  }
+
+  p {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 2;
+    margin-bottom: 22px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 7;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base -10;
+      margin-bottom: 14px;
+    }
+  }
+}

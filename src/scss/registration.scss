@@ -41,41 +41,43 @@
   }
 }
 
-.wpcf7-form-control-wrap {
-  margin-bottom: 17px;
+.registration-group {
+  .wpcf7-form-control-wrap {
+    margin-bottom: 17px;
 
-  @include breakpoint($mobile) {
-    margin-bottom: 9px;
-  }
-
-  label {
-    font-size: $font-size-base + 1;
-    line-height: $line-height-base + 5;
-    font-weight: 500;
-    max-width: 300px;
-    padding-left: 25px;
-    width: 100%;
-
-    @include breakpoint($desktop) {
-      max-width: 250px;
+    @include breakpoint($mobile) {
+      margin-bottom: 9px;
     }
 
-    @include breakpoint($tablet) {
-      font-size: $font-size-base - 4;
-      line-height: $line-height-base - 3;
-      max-width: 190px;
+    label {
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 5;
+      font-weight: 500;
+      max-width: 300px;
+      padding-left: 25px;
+      width: 100%;
+
+      @include breakpoint($desktop) {
+        max-width: 250px;
+      }
+
+      @include breakpoint($tablet) {
+        font-size: $font-size-base - 4;
+        line-height: $line-height-base - 3;
+        max-width: 190px;
+      }
+
+      @include  breakpoint($mobile) {
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 7;
+        max-width: 100%;
+        padding-left: 0;
+        margin-bottom: 5px;
+      }
     }
 
-    @include  breakpoint($mobile) {
-      font-size: $font-size-base - 6;
-      line-height: $line-height-base - 7;
-      max-width: 100%;
-      padding-left: 0;
-      margin-bottom: 5px;
+    input {
+      margin-bottom: 0;
     }
-  }
-
-  input {
-    margin-bottom: 0;
   }
 }

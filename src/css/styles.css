@@ -373,8 +373,7 @@ h6 {
       transform: translateY(-8px) translateX(0) rotate(-45deg); }
 
 .logo {
-  display: flex;
-  padding: 0 !important; }
+  display: flex; }
   @media only screen and (max-width: 1023px) {
     .logo img {
       width: 100px; } }
@@ -386,12 +385,6 @@ h6 {
   max-width: 830px;
   width: 100%;
   margin: 0 !important; }
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; }
 
 .logo-item {
   margin: 0 !important;
@@ -436,14 +429,15 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .banner-content {
-    padding: 0 10px; } }
+    padding: 0 40px; } }
 
 .banner-content p {
   font-size: 20px;
   line-height: 28px;
   max-width: 410px;
   letter-spacing: 2px;
-  padding-left: 9px; }
+  padding-left: 9px;
+  font-weight: 500; }
   @media only screen and (max-width: 1023px) {
     .banner-content p {
       font-size: 13px;
@@ -537,7 +531,7 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .product-wrap-content {
-    padding: 0 10px; } }
+    padding: 0 40px; } }
 
 .product-list li {
   display: flex;
@@ -559,12 +553,18 @@ h6 {
     @media only screen and (max-width: 1295px) {
       .product-list li:nth-child(even) .product-list-description {
         padding-left: 40px; } }
+    @media only screen and (max-width: 1023px) {
+      .product-list li:nth-child(even) .product-list-description {
+        padding-left: 20px; } }
     @media only screen and (max-width: 767px) {
       .product-list li:nth-child(even) .product-list-description {
         padding-left: 0; } }
   @media only screen and (max-width: 1295px) {
     .product-list li:nth-child(odd) .product-list-description {
       padding-right: 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .product-list li:nth-child(odd) .product-list-description {
+      padding-right: 20px; } }
   @media only screen and (max-width: 767px) {
     .product-list li:nth-child(odd) .product-list-description {
       padding-right: 0; } }
@@ -695,13 +695,11 @@ h6 {
   position: relative; }
   @media only screen and (max-width: 1023px) {
     .tobacco-collection-wrap {
-      padding: 22px 80px;
       min-height: 405px; } }
   @media only screen and (max-width: 767px) {
     .tobacco-collection-wrap {
       min-height: 325px;
-      padding: 0;
-      padding-bottom: 20px; } }
+      padding: 10px 0 20px; } }
   .tobacco-collection-wrap:after {
     content: '';
     position: absolute;
@@ -714,7 +712,7 @@ h6 {
 .title-block {
   font-size: 36px;
   line-height: 56px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 30px; }
   @media only screen and (max-width: 1023px) {
@@ -763,7 +761,9 @@ h6 {
     top: -13px; }
 
 .collection-list a {
-  display: block; }
+  display: block;
+  font-size: 17px;
+  line-height: 21px; }
   @media only screen and (max-width: 1023px) {
     .collection-list a {
       font-size: 12px;
@@ -788,7 +788,7 @@ h6 {
       padding: 50px 80px 35px; } }
   @media only screen and (max-width: 767px) {
     .table-reservation {
-      padding: 30px 23px 35px; } }
+      padding: 30px 37px 35px; } }
   .table-reservation:after {
     content: '';
     position: absolute;
@@ -807,12 +807,17 @@ h6 {
     .tobacco-collection {
       margin-bottom: 20px; } }
 
+@media only screen and (max-width: 1023px) {
+  .tobacco-collection-content {
+    padding: 0 80px; } }
+
 @media only screen and (max-width: 767px) {
   .tobacco-collection-content {
-    padding: 10px; } }
+    padding: 0 40px; } }
 
 .tobacco-collection-content p {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  line-height: 21px; }
   @media only screen and (max-width: 1023px) {
     .tobacco-collection-content p {
       font-size: 12px;
@@ -1402,7 +1407,11 @@ select {
     .stock-list .product-list-description {
       max-width: 100%; } }
   .stock-list .product-list-description h3 {
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    line-height: 44px; }
+  .stock-list .product-list-description p {
+    font-size: 17px;
+    line-height: 21px; }
 
 @media only screen and (max-width: 767px) {
   .title-block-booking {
@@ -1473,12 +1482,12 @@ select {
     .registration-item {
       flex-direction: column; } }
 
-.wpcf7-form-control-wrap {
+.registration-group .wpcf7-form-control-wrap {
   margin-bottom: 17px; }
   @media only screen and (max-width: 767px) {
-    .wpcf7-form-control-wrap {
+    .registration-group .wpcf7-form-control-wrap {
       margin-bottom: 9px; } }
-  .wpcf7-form-control-wrap label {
+  .registration-group .wpcf7-form-control-wrap label {
     font-size: 17px;
     line-height: 27px;
     font-weight: 500;
@@ -1486,21 +1495,21 @@ select {
     padding-left: 25px;
     width: 100%; }
     @media only screen and (max-width: 1295px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         max-width: 250px; } }
     @media only screen and (max-width: 1023px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         font-size: 12px;
         line-height: 19px;
         max-width: 190px; } }
     @media only screen and (max-width: 767px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         font-size: 10px;
         line-height: 15px;
         max-width: 100%;
         padding-left: 0;
         margin-bottom: 5px; } }
-  .wpcf7-form-control-wrap input {
+  .registration-group .wpcf7-form-control-wrap input {
     margin-bottom: 0; }
 
 .about-us-content {
@@ -1646,11 +1655,11 @@ select {
   position: relative; }
   @media only screen and (max-width: 1023px) {
     .footer-content {
-      padding: 0 80px; } }
+      padding: 0 92px; } }
   @media only screen and (max-width: 767px) {
     .footer-content {
       flex-direction: column;
-      padding: 0 20px; } }
+      padding: 0 35px; } }
   @media only screen and (max-width: 767px) {
     .footer-content .logo {
       margin-bottom: 8px; } }

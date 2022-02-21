@@ -181,7 +181,6 @@
 
 .logo {
   display: flex;
-  padding: 0 !important;
 
   img {
     @include breakpoint($tablet) {
@@ -200,12 +199,12 @@
   margin: 0 !important;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+//.menu-item {
+//  display: flex;
+//  align-items: center;
+//  justify-content: space-between;
+//  flex-wrap: wrap;
+//}
 
 .logo-item {
   margin: 0 !important;

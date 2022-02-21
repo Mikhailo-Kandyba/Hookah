@@ -28,12 +28,12 @@
     .registration-item {
       flex-direction: column; } }
 
-.wpcf7-form-control-wrap {
+.registration-group .wpcf7-form-control-wrap {
   margin-bottom: 17px; }
   @media only screen and (max-width: 767px) {
-    .wpcf7-form-control-wrap {
+    .registration-group .wpcf7-form-control-wrap {
       margin-bottom: 9px; } }
-  .wpcf7-form-control-wrap label {
+  .registration-group .wpcf7-form-control-wrap label {
     font-size: 17px;
     line-height: 27px;
     font-weight: 500;
@@ -41,19 +41,19 @@
     padding-left: 25px;
     width: 100%; }
     @media only screen and (max-width: 1295px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         max-width: 250px; } }
     @media only screen and (max-width: 1023px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         font-size: 12px;
         line-height: 19px;
         max-width: 190px; } }
     @media only screen and (max-width: 767px) {
-      .wpcf7-form-control-wrap label {
+      .registration-group .wpcf7-form-control-wrap label {
         font-size: 10px;
         line-height: 15px;
         max-width: 100%;
         padding-left: 0;
         margin-bottom: 5px; } }
-  .wpcf7-form-control-wrap input {
+  .registration-group .wpcf7-form-control-wrap input {
     margin-bottom: 0; }

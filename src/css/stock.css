@@ -92,4 +92,8 @@
     .stock-list .product-list-description {
       max-width: 100%; } }
   .stock-list .product-list-description h3 {
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    line-height: 44px; }
+  .stock-list .product-list-description p {
+    font-size: 17px;
+    line-height: 21px; }

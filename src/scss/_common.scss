@@ -46,7 +46,7 @@
   }
 
   @include breakpoint($mobile) {
-    padding: 0 10px;
+    padding: 0 40px;
   }
 
   p {
@@ -55,6 +55,7 @@
     max-width: 410px;
     letter-spacing: 2px;
     padding-left: 9px;
+    font-weight: 500;
 
     @include breakpoint($tablet) {
       font-size: $font-size-base - 3;
@@ -168,7 +169,7 @@
   }
 
   @include breakpoint($mobile) {
-    padding: 0 10px;
+    padding: 0 40px;
   }
 }
 
@@ -200,6 +201,10 @@
           padding-left: 40px;
         }
 
+        @include breakpoint($tablet) {
+          padding-left: 20px;
+        }
+
         @include breakpoint($mobile) {
           padding-left: 0;
         }
@@ -210,6 +215,10 @@
       .product-list-description {
         @include breakpoint($desktop) {
           padding-right: 40px;
+        }
+
+        @include breakpoint($tablet) {
+          padding-right: 20px;
         }
 
         @include breakpoint($mobile) {
@@ -386,14 +395,12 @@
   position: relative;
 
   @include breakpoint($tablet) {
-    padding: 22px 80px;
     min-height: 405px;
   }
 
   @include breakpoint($mobile) {
     min-height: 325px;
-    padding: 0;
-    padding-bottom: 20px;
+    padding: 10px 0 20px;
   }
 
   &:after {
@@ -410,7 +417,7 @@
 .title-block {
   font-size: $font-size-base + 20;
   line-height: $line-height-base + 34;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 30px;
 
@@ -478,6 +485,8 @@
 .collection-list {
   a {
     display: block;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base - 1;
 
     @include breakpoint($tablet) {
       font-size: $font-size-base - 4;
@@ -510,7 +519,7 @@
   }
 
   @include breakpoint($mobile) {
-    padding: 30px 23px 35px;
+    padding: 30px 37px 35px;
   }
 
   &:after {
@@ -536,11 +545,16 @@
 }
 
 .tobacco-collection-content {
+  @include breakpoint($tablet) {
+    padding: 0 80px;
+  }
+
   @include breakpoint($mobile) {
-    padding: 10px;
+    padding: 0 40px;
   }
   p {
     margin-bottom: 40px;
+    line-height: $line-height-base - 1;
 
     @include breakpoint($tablet) {
       font-size: $font-size-base - 4;

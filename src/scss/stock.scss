@@ -135,6 +135,12 @@
 
     h3 {
       letter-spacing: 0;
+      line-height: $line-height-base + 22;
+    }
+
+    p {
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 1;
     }
   }
 }

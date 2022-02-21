@@ -2,3 +2,8 @@
 @import "mixin";
 
 
+.title-block-booking {
+  @include breakpoint($mobile) {
+    letter-spacing: 1px;
+  }
+}

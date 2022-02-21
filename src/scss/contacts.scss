@@ -1,0 +1,137 @@
+@import "variables";
+@import "mixin";
+
+
+.contacts-content {
+  margin-bottom: 80px;
+
+  @include breakpoint($desktop) {
+    padding: 0 40px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0 78px;
+    margin-bottom: 45px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 23px;
+    margin-bottom: 32px;
+  }
+
+  .title-page {
+    margin-bottom: 40px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 33px;
+    }
+
+    @include breakpoint($mobile) {
+      letter-spacing: 1px;
+      margin-bottom: 26px;
+    }
+  }
+
+  p {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 2;
+    margin-bottom: 22px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 7;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base -10;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.contacts-list {
+  padding-top: 12px;
+
+  @include breakpoint($tablet) {
+    padding-top: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 8px;
+    }
+
+    @include breakpoint($mobile) {
+      align-items: flex-start;
+    }
+  }
+
+  p {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 2;
+    font-weight: 600;
+    padding-right: 16px;
+    margin-bottom: 0;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base - 2;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 7;
+    }
+  }
+
+  a {
+    display: block;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-right: 30px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 5;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 8;
+    }
+  }
+
+  address {
+    font-style: normal;
+    cursor: pointer;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 500;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 5;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 8;
+    }
+  }
+
+  .link-holder {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+  }
+}

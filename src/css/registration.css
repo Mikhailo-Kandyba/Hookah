@@ -1,0 +1,59 @@
+.registration-content {
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 1295px) {
+    .registration-content {
+      padding: 0 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .registration-content {
+      padding: 0 78px;
+      margin-bottom: 45px; } }
+  @media only screen and (max-width: 767px) {
+    .registration-content {
+      padding: 0 23px;
+      margin-bottom: 32px; } }
+  .registration-content .title-page {
+    margin-bottom: 40px; }
+    @media only screen and (max-width: 1023px) {
+      .registration-content .title-page {
+        margin-bottom: 33px; } }
+    @media only screen and (max-width: 767px) {
+      .registration-content .title-page {
+        letter-spacing: 1px;
+        margin-bottom: 26px; } }
+
+.registration-item {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .registration-item {
+      flex-direction: column; } }
+
+.wpcf7-form-control-wrap {
+  margin-bottom: 17px; }
+  @media only screen and (max-width: 767px) {
+    .wpcf7-form-control-wrap {
+      margin-bottom: 9px; } }
+  .wpcf7-form-control-wrap label {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 500;
+    max-width: 300px;
+    padding-left: 25px;
+    width: 100%; }
+    @media only screen and (max-width: 1295px) {
+      .wpcf7-form-control-wrap label {
+        max-width: 250px; } }
+    @media only screen and (max-width: 1023px) {
+      .wpcf7-form-control-wrap label {
+        font-size: 12px;
+        line-height: 19px;
+        max-width: 190px; } }
+    @media only screen and (max-width: 767px) {
+      .wpcf7-form-control-wrap label {
+        font-size: 10px;
+        line-height: 15px;
+        max-width: 100%;
+        padding-left: 0;
+        margin-bottom: 5px; } }
+  .wpcf7-form-control-wrap input {
+    margin-bottom: 0; }

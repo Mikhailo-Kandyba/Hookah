@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixin";
+
+.registration-content {
+  margin-bottom: 80px;
+
+  @include breakpoint($desktop) {
+    padding: 0 40px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0 78px;
+    margin-bottom: 45px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 23px;
+    margin-bottom: 32px;
+  }
+
+  .title-page {
+    margin-bottom: 40px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 33px;
+    }
+
+    @include breakpoint($mobile) {
+      letter-spacing: 1px;
+      margin-bottom: 26px;
+    }
+  }
+}
